@@ -1,0 +1,26 @@
+<html ng-app="FoodMart">
+<head>
+	<title></title>
+	<script src="angular.min.js"></script>
+
+	<script src="loginController.js"></script>
+	
+</head>
+<body ng-controller="login"><center>
+	<section  ng-style="loginStyle">
+		<h2> Returning Customer </h2>
+		<input type="text" placeholder="Email:" ng-model="email"><br>
+		<input type="password" placeholder="Password:" ng-model="password"><br>
+		<input type="button" value="login" ng-click="login()"><br>
+		<span> forgot your password? <a href=""> Click here </a></span>
+	</section>
+	<section ng-style="error">
+		<h2> Invalid Credentials </h2>
+	</section>
+	 <section ng-style="orderStyle" >
+		<h2> Welcome! </h2>
+		<img src="02.png">
+	</section>
+</center>
+</body>
+</html>
